@@ -6,6 +6,10 @@ html, body {
   max-width: 768px;
 }
 
+#pouring-soon {
+  margin-top:0;
+}
+
 .block-email {
   padding: 6px 14px;
   color: #000;
@@ -15,14 +19,14 @@ html, body {
 }
 
 div.full-page {
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100vw;
   color: #fff;
   padding:0 0 0 0;
 }
 
 .image-filter {
-  height:100vh;
+  height: calc(100vh - 50px);
   width:100vw;
   background-color: rgba(50,50,50, .3);
 }
@@ -33,6 +37,7 @@ div.full-page {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin-top: 50px;
 }
 
 #second-page {
