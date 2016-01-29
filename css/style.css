@@ -6,6 +6,14 @@ html, body {
   max-width: 768px;
 }
 
+.block-email {
+  padding: 6px 14px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 5px 0px;
+}
+
 div.full-page {
   height: 100vh;
   width: 100vw;
