@@ -21,14 +21,14 @@ html, body {
 }
 
 div.full-page {
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   width: 100vw;
   color: #fff;
   padding:0 0 0 0;
 }
 
 .image-filter {
-  height: calc(100vh - 50px);
+  min-height: calc(100vh - 50px);
   width:100vw;
   background-color: rgba(50,50,50, .3);
 }
