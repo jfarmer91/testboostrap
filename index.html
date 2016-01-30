@@ -20,32 +20,35 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Foam Brewers</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#the-brewery">The Brewery</a></li>
+          <li><a href="#our-beers">Our Beers</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#footer">Other Links</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
 <div id="home-page" class="container-fluid full-page">
   <div class="image-filter">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Foam Brewers</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#second-page">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <img class="center-block full-logo first-element-page" src="logo/logo_color_resize2.png" width="100%" alt="site-image">
     <h4 id="pouring-soon" class="text-center">POURING SOON</h4>
@@ -85,4 +88,9 @@
     <p>This part is inside a .container class.</p>
     <p>The .container class provides a responsive fixed width container.</p>
   </div>
+</div>
+<div id="footer" class="container-fluid no-background-photo">
+  <h1 class="text-center">Other Links</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
 </div>
