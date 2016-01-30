@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
 </head>
 <body>
 <div class="image-filter">
@@ -29,16 +31,16 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Foam Brewers</a>
+        <a class="navbar-brand navbar-link-collapse" href="#">Foam Brewers</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li><a href="#" data-toggle="collapse" data-target="#myNavbar">Home</a></li>
-          <li><a href="#about-us" data-toggle="collapse" data-target="#myNavbar">About Us</a></li>
-          <li><a href="#the-brewery" data-toggle="collapse" data-target="#myNavbar">The Brewery</a></li>
-          <li><a href="#our-beers" data-toggle="collapse" data-target="#myNavbar">Our Beers</a></li>
-          <li><a href="#store" data-toggle="collapse" data-target="#myNavbar">Store</a></li>
-          <li><a href="#footer" data-toggle="collapse" data-target="#myNavbar">Other Links</a></li>
+          <!-- <li><a href="#" data-toggle="collapse" data-target="#myNavbar">Home</a></li> -->
+          <li><a class="navbar-link-collapse" href="#about-us">About Us</a></li>
+          <li><a class="navbar-link-collapse" href="#the-brewery">The Brewery</a></li>
+          <li><a class="navbar-link-collapse" href="#our-beers">Our Beers</a></li>
+          <li><a class="navbar-link-collapse" href="#store">Store</a></li>
+          <li><a class="navbar-link-collapse" href="#footer">Other Links</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#" data-toggle="collapse" data-target="#myNavbar"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -96,5 +98,20 @@
   <p>The .container class provides a responsive fixed width container.</p>
 </div>
 </div>
+
+<script>
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+  if (w < 768) {
+    var navLinks = document.getElementsByClassName("navbar-link-collapse")
+    for (i = 0; i < navLinks.length; i++) {
+      navLinks[i].dataset.target = "#myNavbar";
+      navLinks[i].dataset.toggle = "collapse";
+    }
+    console.log(document.getElementsByClassName("navbar-link-collapse"));
+
+  }
+  // console.log(document.getElementsByClassName("navbar-link-collapse"));
+</script>
+
 </body>
 </html>
