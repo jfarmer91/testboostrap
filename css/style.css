@@ -11,6 +11,11 @@ html, body {
   margin-top:0;
 }
 
+.first-element-page {
+  padding-top: 50px;
+  margin-top: 0;
+}
+
 .block-email {
   padding: 6px 14px;
   color: #000;
@@ -21,14 +26,17 @@ html, body {
 }
 
 div.full-page {
-  min-height: calc(100vh - 50px);
+  /*min-height: calc(100vh - 50px);*/
+  min-height: 100vh;
   width: 100vw;
   color: #fff;
   padding:0 0 0 0;
 }
 
 .image-filter {
-  min-height: calc(100vh - 50px);
+  /*position:absolute;*/
+  /*min-height: calc(100vh - 50px);*/
+  min-height: 100vh;
   width:100vw;
   background-color: rgba(50,50,50, .3);
 }
@@ -39,7 +47,7 @@ div.full-page {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 #second-page {
