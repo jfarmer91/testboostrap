@@ -5,6 +5,7 @@ html, body {
 
 .full-logo {
   max-width: 768px;
+  padding: 0px 20px;
 }
 
 #pouring-soon {
