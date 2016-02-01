@@ -20,6 +20,10 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
+  <!--localscroll-->
+  <script src="//cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
+
+
 </head>
 <body>
 <div class="image-filter">
@@ -31,7 +35,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand navbar-link-collapse" href="#">Foam Brewers</a>
+        <a class="navbar-brand navbar-link-collapse" href="#home-page">Foam Brewers</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -100,18 +104,41 @@
 </div>
 
 <script>
-var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-  if (w < 768) {
-    var navLinks = document.getElementsByClassName("navbar-link-collapse")
-    for (i = 0; i < navLinks.length; i++) {
-      navLinks[i].dataset.target = "#myNavbar";
-      navLinks[i].dataset.toggle = "collapse";
-    }
-    console.log(document.getElementsByClassName("navbar-link-collapse"));
 
-  }
+
+  $(function() {
+   $('a[href*="#"]:not([href="#"])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      //  console.log(location.pathname.replace(/^\//,''));
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      //  console.log(target);
+       if (target.length) {
+         $('html, body').animate({
+           scrollTop: target.offset().top
+         }, 1000);
+        //  return false;
+       }
+     }
+   });
+  });
+
+
   // console.log(document.getElementsByClassName("navbar-link-collapse"));
 </script>
+<script>
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+if (w < 768) {
+  var navLinks = document.getElementsByClassName("navbar-link-collapse")
+  for (i = 0; i < navLinks.length; i++) {
+    navLinks[i].dataset.target = "#myNavbar";
+    navLinks[i].dataset.toggle = "collapse";
+  }
+  console.log(document.getElementsByClassName("navbar-link-collapse"));
+
+}
+</script>
+
 
 </body>
 </html>
