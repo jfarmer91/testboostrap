@@ -10,11 +10,18 @@ html, body {
 
 #pouring-soon {
   margin-top:0;
+  font-size: 32px;
 }
 
 .first-element-page {
-  padding-top: 60px;
+  padding-top: 70px;
   margin-top: 0;
+  /*border-bottom: 1px solid #ccc;*/
+}
+
+.featured-beer {
+  margin-top:10px;
+  margin-bottom: 20px;
 }
 
 .block-email {
@@ -63,7 +70,7 @@ div.full-page {
   background-color: #8C6954;
 }
 #footer {
-  background-color: #260126;
+  background-color: #222;
 }
 
 #the-brewery {
@@ -80,4 +87,8 @@ div.full-page {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.story {
+  margin-top: 50px;
 }

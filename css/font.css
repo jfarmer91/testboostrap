@@ -1,6 +1,16 @@
 html, body {
   font-family: 'Josefin Slab';
 }
+
+div.encompassing {
+  font-family: 'Josefin Slab';
+}
+
+.hr-subheading {
+  width: 45vw;
+
+}
+
 h1.first-element-page {
 	font-family: 'Josefin Slab';
 	font-size: 42px;
