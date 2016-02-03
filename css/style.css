@@ -71,6 +71,13 @@ div.full-page {
 }
 #footer {
   background-color: #222;
+  padding-top:20px;
+  padding-bottom:20px;
+  color: #ccc;
+}
+
+.foot-sm-text {
+  font-size: 18px;
 }
 
 #the-brewery {
